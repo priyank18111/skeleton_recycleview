@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:id="@+id/relativeLayout3"  
+    android:layout_width="match_parent"  
+    android:layout_height="80dp"  
+    android:paddingLeft="10dp"  
+    android:paddingRight="10dp">
+    
+
+      <io.supercharge.shimmerlayout.ShimmerLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shimmer_view_container" 
+        android:visibility="invisible"
+         >
+         
+           
+            <include layout="@layout/list_shimmer_layout" />  
+      
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+    <RelativeLayout
+    android:id="@+id/relativeLayout2"  
+    android:layout_width="match_parent"  
+    android:layout_height="80dp"  
+    android:paddingLeft="10dp"  
+    android:paddingRight="10dp"
+        android:visibility="invisible">  
+
+    <ImageView  
+        android:id="@+id/user_image_View"  
+        android:layout_width="45dp"  
+        android:layout_height="45dp"  
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_user" />  
+  
+  
+    <RelativeLayout  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_centerVertical="true"  
+        android:layout_toEndOf="@+id/user_image_View"  
+        android:padding="10dp">  
+  
+        <TextView  
+            android:id="@+id/user_name_textview"  
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"  
+            tools:text="Gaurav Kumar"  
+            android:textSize="15sp"/>  
+  
+        <TextView  
+  
+            android:id="@+id/user_profession"  
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_below="@+id/user_name_textview"  
+            android:layout_marginTop="2dp"  
+            tools:text="Software Engineer"  
+            android:textSize="13sp"/>  
+  
+        <TextView  
+            android:id="@+id/user_address"  
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_below="@+id/user_profession"  
+            android:layout_marginTop="2dp"  
+            android:textSize="13sp"  
+            tools:text="Noida"  
+  
+            />  
+    </RelativeLayout>  
+
+    </RelativeLayout>
+  
+</RelativeLayout>  
